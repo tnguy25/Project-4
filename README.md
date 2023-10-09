@@ -1,6 +1,3 @@
-> [!NOTE]
-> This is a note
-
 # Project-4 Proposal
 
 ## Analyzing the Impact of Predictive Analytics on Student Success in Post-Secondary Education
@@ -37,6 +34,8 @@ For this project, we will use the following technologies and tools:
    - Explore student demographics, academic performance, and attendance patterns.
    - Create visualizations to understand trends and relationships within the data.
    - Formulate hypotheses based on EDA findings:
+     > [!NOTE]
+     > REQUIRES REVISION
      - Hypothesis 1: Students with higher socioeconomic status tend to have better academic performance.
      - Hypothesis 2: There is a positive correlation between attendance rate and student GPA.
      - Hypothesis 3: Academic performance follows a seasonal pattern, with better performance in certain semesters.
