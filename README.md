@@ -1,8 +1,6 @@
-# Project-4
+# Project-4 Proposal
 
-# Project Proposal
-
-# Analyzing the Impact of Predictive Analytics on Student Success in Post-Secondary Education
+## Analyzing the Impact of Predictive Analytics on Student Success in Post-Secondary Education
 
 ## Project Scope and Purpose:
 Our project aims to investigate the impact of predictive analytics on student success. Predictive analytics is increasingly being used in the education sector to identify at-risk students, optimize educational resources, and improve learning outcomes. However, it is essential to understand the societal implications of these practices.
