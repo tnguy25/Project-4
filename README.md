@@ -1,3 +1,6 @@
+> [!NOTE]
+> This is a note
+
 # Project-4 Proposal
 
 ## Analyzing the Impact of Predictive Analytics on Student Success in Post-Secondary Education
@@ -20,7 +23,7 @@ https://archive-beta.ics.uci.edu/dataset/697/predict+students+dropout+and+academ
 For this project, we will use the following technologies and tools:
 - Python with Scikit-learn for machine learning analysis.
 - Python Pandas for data manipulation.
-- Python Matplotlib and Plotly for data visualization.
+- Python Matplotlib for data visualization.
 - HTML/CSS/Bootstrap for creating a user-friendly dashboard.
 - SQL Database for storing and retrieving data.
 - GitHub for version control and collaboration.
