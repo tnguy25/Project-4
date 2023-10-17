@@ -1,0 +1,251 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<title>Nationality and Other Factors</title>
+	<link rel="stylesheet" href="css/mem2part.css">
+  </head>
+  <body>
+	<header>
+      <div class="topnav" id="myTopnav">
+		<ul class="nav">
+		  <li><a href="home2.html">Home</a></li>
+		  <li><a href="proposal.html">Introduction</a></li>
+		  <li class="dropdown"><a href="javascript:void(0)" class="dropbtn active">ML Models</a>
+			<div class="dropdown-content">
+			  <a href="overview.html">Overview</a>
+			  <a href="mem1part.html">Parents Factors Predictor</a>
+			  <a href="mem2part.html" class="active">Nationality, International, Inflation, and Scholarship Holder Factor</a>
+			  <a href="mem3part.html">Deep Learning</a>
+			</div>
+		  </li>
+		  <li><a href="conclusion.html">Conclusion</a></li>
+		  <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"></a></li>
+		</ul>
+	  </div>
+	</header>
+	<main>
+	  <div class="col-12">
+		<h3>Introduction</h3>
+		<p>In this section, we will explore the national, international, inflation and scholarship holder factors against the dropout/graduate target. We filtered our original data to get right features. We use decision tree algorithm to predict if the target. </p>
+		<h4>Nationality and International vs. Target Example</h4>
+		  <div class="col-6 pic">
+			<img src="../img/national/International_vs_Target.png">
+		  </div>
+		  <div class="col-6 pic">
+			<img src="../img/national/Nacionality_vs_Target.png">
+		  </div>
+			<table class="styled-table">
+			  <tr>
+				<th></th>
+				<th>Precision</th>
+				<th>Recall</th>
+				<th>F1-score</th>
+				<th>Support</th>
+			  </tr>
+			  <tr>
+				<td>Dropout</td>
+				<td>0.50</td>
+				<td>0.00</td>
+				<td>0.01</td>
+				<td>316</td>
+			  </tr>
+			  <tr>
+				<td>Graduate</td>
+				<td>0.47</td>
+				<td>1.00</td>
+				<td>0.64</td>
+				<td>418</td>
+			  </tr>
+			  <tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			  </tr>
+			  <tr>
+				<td>Accuracy</td>
+				<td></td>
+				<td></td>
+				<td>0.47</td>
+				<td>885</td>
+			  </tr>
+			  <tr>
+				<td>Macro Avg</td>
+				<td>0.32</td>
+				<td>0.33</td>
+				<td>0.22</td>
+				<td>885</td>
+			  </tr>
+			  <tr>
+				<td>Weighted Avg</td>
+				<td>0.40</td>
+				<td>0.47</td>
+				<td>0.31</td>
+				<td>885</td>
+			  </tr>
+			</table>
+		<h4>Nationality, International and Inflation rate vs. Target Example</h4>
+			<table class="styled-table">
+			  <tr>
+				<th></th>
+				<th>Precision</th>
+				<th>Recall</th>
+				<th>F1-score</th>
+				<th>Support</th>
+			  </tr>
+			  <tr>
+				<td>Dropout</td>
+				<td>0.29</td>
+				<td>0.01</td>
+				<td>0.01</td>
+				<td>316</td>
+			  </tr>
+			  <tr>
+				<td>Graduate</td>
+				<td>0.47</td>
+				<td>0.99</td>
+				<td>0.64</td>
+				<td>418</td>
+			  </tr>
+			  <tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			  </tr>
+			  <tr>
+				<td>Accuracy</td>
+				<td></td>
+				<td></td>
+				<td>0.47</td>
+				<td>885</td>
+			  </tr>
+			  <tr>
+				<td>Macro Avg</td>
+				<td>0.35</td>
+				<td>0.34</td>
+				<td>0.23</td>
+				<td>885</td>
+			  </tr>
+			  <tr>
+				<td>Weighted Avg</td>
+				<td>0.37</td>
+				<td>0.47</td>
+				<td>0.31</td>
+				<td>885</td>
+			  </tr>
+			</table>
+		<h4>Inflation vs. Target Example</h4>
+			<table class="styled-table">
+			  <tr>
+				<th></th>
+				<th>Precision</th>
+				<th>Recall</th>
+				<th>F1-score</th>
+				<th>Support</th>
+			  </tr>
+			  <tr>
+				<td>Dropout</td>
+				<td>0.00</td>
+				<td>0.00</td>
+				<td>0.00</td>
+				<td>316</td>
+			  </tr>
+			  <tr>
+				<td>Graduate</td>
+				<td>0.47</td>
+				<td>1.00</td>
+				<td>0.64</td>
+				<td>418</td>
+			  </tr>
+			  <tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			  </tr>
+			  <tr>
+				<td>Accuracy</td>
+				<td></td>
+				<td></td>
+				<td>0.47</td>
+				<td>885</td>
+			  </tr>
+			  <tr>
+				<td>Macro Avg</td>
+				<td>0.16</td>
+				<td>0.33</td>
+				<td>0.21</td>
+				<td>885</td>
+			  </tr>
+			  <tr>
+				<td>Weighted Avg</td>
+				<td>0.22</td>
+				<td>0.47</td>
+				<td>0.30</td>
+				<td>885</td>
+			  </tr>
+			</table>
+		<h4>Nationality, International, Scholarship holder vs. Target Example</h4>
+			<table class="styled-table">
+			  <tr>
+				<th></th>
+				<th>Precision</th>
+				<th>Recall</th>
+				<th>F1-score</th>
+				<th>Support</th>
+			  </tr>
+			  <tr>
+				<td>Dropout</td>
+				<td>0.27</td>
+				<td>0.01</td>
+				<td>0.02</td>
+				<td>316</td>
+			  </tr>
+			  <tr>
+				<td>Graduate</td>
+				<td>0.47</td>
+				<td>0.99</td>
+				<td>0.64</td>
+				<td>418</td>
+			  </tr>
+			  <tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			  </tr>
+			  <tr>
+				<td>Accuracy</td>
+				<td></td>
+				<td></td>
+				<td>0.47</td>
+				<td>885</td>
+			  </tr>
+			  <tr>
+				<td>Macro Avg</td>
+				<td>0.25</td>
+				<td>0.33</td>
+				<td>0.22</td>
+				<td>885</td>
+			  </tr>
+			  <tr>
+				<td>Weighted Avg</td>
+				<td>0.32</td>
+				<td>0.47</td>
+				<td>0.31</td>
+				<td>885</td>
+			  </tr>
+			</table>
+		</div>
+	  </main>
+	<footer class="footer">
+		<div class="copyright">Presented by Rita Nguyen, Daniel Wallach, Justin Zhang, Margarita Lopez, and Uwagboe Olusoga</div>
+	</footer>
+  </body>
+</html>

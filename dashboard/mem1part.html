@@ -1,0 +1,139 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<title>Parents Factors</title>
+	<link rel="stylesheet" href="css/mem1part.css">
+  </head>
+  <body>
+	<header>
+      <div class="topnav" id="myTopnav">
+		<ul class="nav">
+		  <li><a href="home2.html">Home</a></li>
+		  <li><a href="proposal.html">Introduction</a></li>
+		  <li class="dropdown"><a href="javascript:void(0)" class="dropbtn active">ML Models</a>
+			<div class="dropdown-content">
+			  <a href="overview.html" >Overview</a>
+			  <a href="mem1part.html" class="active">Parents Factors Predictor</a>
+			  <a href="mem2part.html">Nationality, International, Inflation, and Scholarship Holder Factor</a>
+			  <a href="mem3part.html">Deep Learning</a>
+			</div>
+		  </li>
+		  <li><a href="conclusion.html">Conclusion</a></li>
+		  <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"></a></li>
+		</ul>
+	  </div>
+	</header>
+	<main>
+	  <div class="col-12">
+		<h3>Introduction</h3>
+		<p>In this section, we will explore the marital status and parents factors against the dropout/graduate target. We filtered our original data to get right features. We use random forest model, logistic regression, support vector machine (SMV), XGBoost, and MLPClassifier to predict if the target. </p>
+		<h4>Random Forest's Classification Report Example</h4>
+		<table class="styled-table">
+		  <tr>
+			<th></th>
+			<th>Precision</th>
+			<th>Recall</th>
+			<th>F1-score</th>
+			<th>Support</th>
+		  </tr>
+		  <tr>
+			<td>Dropout</td>
+			<td>0.56</td>
+			<td>0.17</td>
+			<td>0.26</td>
+			<td>414</td>
+		  </tr>
+		  <tr>
+			<td>Graduate</td>
+			<td>0.64</td>
+			<td>0.92</td>
+			<td>0.76</td>
+			<td>675</td>
+		  </tr>
+		  <tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		  </tr>
+		  <tr>
+			<td>Accuracy</td>
+			<td></td>
+			<td></td>
+			<td>0.63</td>
+			<td>1089</td>
+		  </tr>
+		  <tr>
+			<td>Macro Avg</td>
+			<td>0.60</td>
+			<td>0.54</td>
+			<td>0.51</td>
+			<td>1089</td>
+		  </tr>
+		  <tr>
+			<td>Weighted Avg</td>
+			<td>0.61</td>
+			<td>0.63</td>
+			<td>0.57</td>
+			<td>1089</td>
+		  </tr>
+		</table>
+	  </div>
+	  <div class="row">
+		<div class="col-5">
+		  <h4>Accuracy</h4>
+          <p>The model's accuracy is 63.27%. This means that the model correctly predicted whether students graduated or dropped out in
+63.27% of the cases in the testing set.</p> 
+		</div>
+       
+		<div class="col-6">
+		  <h4>Analysis</h4>
+		  <ul>
+			<li>Precision for Dropout: Indicates the proportion of students predicted to dropout that actually dropped out.</li>
+			<li>Recall for Dropout: Indicates the proportion of actual dropouts that were correctly identified by the model.</li>
+			<li>Precision for Graduate: Indicates the proportion of students predicted to graduate that actually graduated.</li>
+			<li>Recall for Graduate: Indicates the proportion of actual graduates that were correctly identified by the model.</li>
+		  </ul>
+		</div>
+	  </div>
+	  <div class="part-1">
+        <div class="col-3">
+          <h3>Logistic Regression</h3>
+		  <ul>
+			<li>Fitting 5 folds for each of 6 candidates, totalling 30 fits</li>
+			<li>Best Logistic Regression Hyperparameters: {'C': 0.01}</li>
+			<li>Test Accuracy with Best Logistic Regression Model: <strong>0.6189164370982553</strong></li>
+		  </ul>
+        </div>
+       
+	  <div class="col-4">
+        <h3>SMV</h3>
+          <ul>
+			<li>Fitting 5 folds for each of 15 candidates, totalling 75 fits</li>
+			<li>Best SVM Hyperparameters: {'C': 10, 'kernel': 'rbf'}</li>
+            <li>Test Accuracy with Best SVM Model: <strong>0.6391184573002755</strong></li>
+		  </ul>
+      </div>
+	  <div class="col-3">
+        <h3>xGBoost</h3>
+          <ul>
+			<li>Fitting 5 folds for each of 27 candidates, totalling 135 fits</li>
+			<li>Best XGBoost Hyperparameters: {'learning_rate': 0.01, 'max_depth': 5, 'n_estimators': 50}</li>
+            <li>Test Accuracy with Best XGBoost Model: <strong>0.6326905417814509</strong></li>
+		  </ul>
+      </div>
+      </div>
+	  <div class="col-12"><h3>Neural Network</h3>
+		<div class="part-2">
+		  <p>MLP Classifier has 100 neurons in a single hidden layer, a "relu" activation function and will run a maximum of 200 iterations. However, if training loss did not improve more than 0.0001 for multiple epochs, training will be stopped. </p>
+		  <p>Sample's accuracy score: <strong>0.6170798898071626</strong></p>
+		</div>
+	  </div>
+	</main>
+    <footer class="footer">
+		<p class="copyright">Presented by Rita Nguyen, Daniel Wallach, Justin Zhang, Margarita Lopez, and Uwagboe Olusoga</p>
+	</footer>
+</body>
+</html>

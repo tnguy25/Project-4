@@ -1,0 +1,154 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<title>Deep Learning</title>
+	<link rel="stylesheet" href="css/mem3part.css">
+  </head>
+  <body>
+	<header>
+	  <div class="topnav" id="myTopnav">
+		<ul class="nav">
+		  <li><a href="home2.html">Home</a></li>
+		  <li><a href="proposal.html">Introduction</a></li>
+		  <li class="dropdown"><a href="javascript:void(0)" class="dropbtn active">ML Models</a>
+			<div class="dropdown-content">
+			  <a href="overview.html">Overview</a>
+			  <a href="mem1part.html">Parents Factors Predictor</a>
+			  <a href="mem2part.html">Nationality, International, Inflation, and Scholarship Holder Factor</a>
+			  <a href="mem3part.html" class="active">Deep Learning</a>
+			</div>
+		  </li>
+		  <li><a href="conclusion.html">Conclusion</a></li>
+		  <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"></a></li>
+		</ul>
+	  </div>
+	</header>
+	<main>
+		<div class="col-12">
+		  <h3>Introduction</h3>
+		  <p>In this section, we will use random forest and neural network to train and test our features against the target.</p>
+		  <h4>Random Forest Example</h4>
+		  <p>We select all the features against the target variable. </p>
+		  <table class="styled-table">
+			<tr>
+			  <th></th>
+			  <th>Precision</th>
+			  <th>Recall</th>
+			  <th>F1-score</th>
+			  <th>Support</th>
+			</tr>
+			<tr>
+			  <td>Dropout</td>
+			  <td>0.85</td>
+			  <td>0.73</td>
+			  <td>0.79</td>
+			  <td>285</td>
+			</tr>
+			<tr>
+			  <td>Graduate</td>
+			  <td>0.81</td>
+			  <td>0.95</td>
+			  <td>0.87</td>
+			  <td>459</td>
+			</tr>
+			<tr>
+			  <td></td>
+			  <td></td>
+			  <td></td>
+			  <td></td>
+			  <td></td>
+			</tr>
+			<tr>
+			  <td>Accuracy</td>
+			  <td></td>
+			  <td></td>
+			  <td>0.79</td>
+			  <td>885</td>
+			</tr>
+			<tr>
+			  <td>Macro Avg</td>
+			  <td>0.72</td>
+			  <td>0.68</td>
+			  <td>0.69</td>
+			  <td>885</td>
+			</tr>
+			<tr>
+			  <td>Weighted Avg</td>
+			  <td>0.77</td>
+			  <td>0.79</td>
+			  <td>0.77</td>
+			  <td>885</td>
+			</tr>
+		  </table>
+		  <h4>Neural Network Example</h4>
+		  <p>We provide the input nodes of 34 features with a relu activation function, a hidden layer with 17 nodes with a relu activation function and a sigmoid function in the output layer to train the data.</p>
+		  <table class="styled-table">
+			<tr>
+			  <th></th>
+			  <th>Precision</th>
+			  <th>Recall</th>
+			  <th>F1-score</th>
+			  <th>Support</th>
+			</tr>
+			<tr>
+			  <td>Dropout</td>
+			  <td>0.90</td>
+			  <td>0.83</td>
+			  <td>0.86</td>
+			  <td>435</td>
+			</tr>
+			<tr>
+			  <td>Graduate</td>
+			  <td>0.89</td>
+			  <td>0.94</td>
+			  <td>0.62</td>
+			  <td>654</td>
+			</tr>
+			<tr>
+			  <td></td>
+			  <td></td>
+			  <td></td>
+			  <td></td>
+			  <td></td>
+			</tr>
+			<tr>
+			  <td>Accuracy</td>
+			  <td></td>
+			  <td></td>
+			  <td>0.90</td>
+			  <td>1089</td>
+			</tr>
+			<tr>
+			  <td>Macro Avg</td>
+			  <td>0.90</td>
+			  <td>0.88</td>
+			  <td>0.89</td>
+			  <td>1089</td>
+			</tr>
+			<tr>
+			  <td>Weighted Avg</td>
+			  <td>0.90</td>
+			  <td>0.90</td>
+			  <td>0.89</td>
+			  <td>1089</td>
+			</tr>
+		  </table>
+		</div>
+      <div class="col-12 intro">
+	    <h4>Model Evaluation</h4>
+		<div class="col-4 headline">
+		  <p>After implementing efficient feature engineer (eliminating outliers and deleting repeating features) and deploying Deep Learning with the support of Dropout and Early Stopping, I was able to increase the accuracy from <strong id="text-1">0.79</strong> to <strong id="text-2">0.90</strong>. <br/>
+		  <br>The figure shown loss and val_loss comparison.</p>
+		</div>
+  
+		<div class= "col-7 pic">
+		  <img src="../img/deeplearning/losses.png">
+		</div>
+      </div>
+	</main>
+    <footer class="footer">
+		<p class="copyright">Presented by Rita Nguyen, Daniel Wallach, Justin Zhang, Margarita Lopez, and Uwagboe Olusoga</p>
+	</footer>
+  </body>
+</html>

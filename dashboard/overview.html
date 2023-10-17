@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<title>Overview</title>
+	<link rel="stylesheet" href="css/overview.css">
+  </head>
+  <body>
+	<header>
+      <div class="topnav" id="myTopnav">
+		<ul class="nav">
+		  <li><a href="home2.html">Home</a></li>
+		  <li><a href="proposal.html">Introduction</a></li>
+		  <li class="dropdown"><a href="javascript:void(0)" class="dropbtn active">ML Models</a>
+			<div class="dropdown-content">
+			  <a href="overview.html" class="active">Overview</a>
+			  <a href="mem1part.html">Parents Factors Predictor</a>
+			  <a href="mem2part.html">Nationality, International, Inflation, and Scholarship Holder Factor</a>
+			  <a href="mem3part.html">Deep Learning</a>
+			</div>
+		  </li>
+		  <li><a href="conclusion.html">Conclusion</a></li>
+		  <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"></a></li>
+		</ul>
+	  </div>
+	</header> 
+	<main>
+		<h2 class="major">Features</h2>
+		<div>
+		  <table class="styled-table">
+			<tr>
+			  <td>Marital status</td>
+			  <td>Application mode</td>
+			  <td>Application order</td>
+			  <td>Course</td>
+			</tr>
+			<tr>
+			  <td>Daytime/evening attendance</td>
+			  <td>Previous qualification</td>
+			  <td>Previous qualification (grade)</td>
+			  <td>Nacionality</td>
+			</tr>
+			<tr>
+			  <td>Mother's qualification</td>
+			  <td>Father's qualification</td>
+			  <td>Mother's occupation</td>
+			  <td>Father's occupation</td>
+			</tr>
+			<tr>
+			  <td>Admission grade</td>
+			  <td>Displaced</td>
+			  <td>Educational special needs</td>
+			  <td>Debtor</td>
+			</tr>
+			<tr>
+			  <td>Tuition fees up to date</td>
+			  <td>Gender</td>
+			  <td>Scholarship holder</td>
+			  <td>Age at enrollment</td>
+			</tr>
+			<tr>
+			  <td>International</td>
+			  <td>Curricular units 1st sem (credited)</td>
+			  <td>Curricular units 1st sem (enrolled)</td>
+			  <td>Curricular units 1st sem (evaluations)</td>
+			</tr>
+			<tr>
+			  <td>Curricular units 1st sem (approved)</td>
+			  <td>Curricular units 1st sem (grade)</td>
+			  <td>Curricular units 1st sem (without evaluations)</td>
+			  <td>Curricular units 2nd sem (credited)</td>
+			</tr>
+			<tr>
+			  <td>Curricular units 2nd sem (enrolled)</td>
+			  <td>Curricular units 2nd sem (evaluations)</td>
+			  <td>Curricular units 2nd sem (approved)</td>
+			  <td>Curricular units 2nd sem (grade)</td>
+			</tr>
+			<tr>
+			  <td>Curricular units 2nd sem (without evaluations)</td>
+			  <td>Unemployment rate</td>
+			  <td>Inflation rate</td>
+			  <td>GDP</td>
+			</tr>
+		  </table>
+		</div>
+		<h2 class="major">Target</h2>
+		  <ul>
+			<li class="target">We look to determine if our model will be able to predict if the student will dropout or gradute.</li>
+		  </ul>
+		<h2 class="major">Exploratory Data Analysis (EDA)</h2>
+		  <p>We use matplotlib or plot our features against the target so we can have a good enough idea of numerical features, how do they look like, their common values in a large number of houses and their distribution.</p>
+		  <div class="preprocessing">
+			<span class="image">
+			  <img src="../img/overview/GeneralExplore.png" alt="students with books">
+			</span>
+		  </div>
+		  <p>We also plot our correlation of the features against the target</p>
+		  <div class="preprocessing">
+			<span class="image">
+			  <img src="../img/overview/Correlation.png" alt="students with books">
+			</span>
+	    </div>
+    </main>
+	<footer>
+      <p class="copyright">Presented by Rita Nguyen, Daniel Wallach, Justin Zhang, Margarita Lopez, and Uwagboe Olusoga</p>
+	</footer>
+  </body>
+</html>

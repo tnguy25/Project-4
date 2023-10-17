@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<title>Conclusion</title>
+	<link rel="stylesheet" href="css/conclusion.css">
+  </head>
+  <body>
+	<header>
+      <div class="topnav" id="myTopnav">
+		<ul class="nav">
+		  <li><a href="home2.html">Home</a></li>
+		  <li><a href="proposal.html">Introduction</a></li>
+		  <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">ML Models</a>
+			<div class="dropdown-content">
+			  <a href="overview.html">Overview</a>
+			  <a href="mem1part.html">Parents Factors Predictor</a>
+			  <a href="mem2part.html">Nationality, International, Inflation, and Scholarship Holder Factor</a>
+			  <a href="mem3part.html">Deep Learning</a>
+			</div>
+		  </li>
+		  <li><a href="conclusion.html" class="active">Conclusion</a></li>
+		  <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"></a></li>
+		</ul>
+	  </div>
+	</header>
+	<main>
+	  <div class="col-12">
+		<h2>Parents Factors Predictor</h2>
+		<p>Based on the analysis of various classification models, including Random Forest Classifier, Logistic Regression, Support Vector Machine (SVM), and Multi-layer Perceptron (MLP) Classifier, it can be concluded that while they have some efficacy as predictors, Marital Status, Mother's Qualification, Father's Qualification, Mother's Occupation, and Father's Occupation, are not strong enough predictors for achieving high accuracy in predicting student success.
+		<ul>
+		  <li>None of the models were able to achieve an accuracy beyond approximately <strong>63%</strong>, which falls short of the <strong id="targetval">75%</strong> target accuracy considered acceptable</li></ul>This suggests that the information contained in these features may not be sufficient to reliably predict the target variable or that other unconsidered factors may be influencing the outcome more significantly.<br/>
+In summary, based on the models tested, these particular features alone may not be highly effective predictors for the given classification task. Further feature engineering or the inclusion of additional relevant features may be necessary to improve prediction accuracy. </p>
+	  </div>
+		<h2>Nationality, International, Inflation Rate, and Scholarship Holder Factor</h2>
+		<p>To conclude, in measuring the international and national background of a student against the target of outcome, graduation and dropout, there is a lack of correlation between the values with a p-value of <strong id="targetval">0.75</strong>. </br></br>This tells an almost obvious but also important story that the national background of a student and their status, international or domestic, does not negatively or positively affect creating more graduates or dropouts. In creating the model using a decision tree for these values, there was difficulty in achieving an optimal or high accuracy score in isolating these features. The score achieved was only that of <strong class="text-1">0.47</strong>. <br/></br> The problem mainly comes from the data for nationality and international status being imbalanced data and the sample size for international and national students, as domestic students occupy the majority of the student body and foreign and international students make up a tiny percentage of students.The features of the nationality of students are not indicative of the model, but also, the features of the nationality of students are not indicative of ability and outcome.</p>
+		<h2>Deep Learning</h2>
+		<p>It is unsurprising to know that the the lower the unemployment rate is, the less likely that a student will drop out. It makes sense because if unemployment is low, which means the demand of labor is high, a job seeker has higher chance to have a job. This undermines the need of earning a degree. When unemployment is high, a job seeker is expected to be more competitive to be able to have a job. Using Random Forest, a 79% accuracy was attained and 90% was achieved with deep learning.</p>
+		<h2>Policy Recommendations</h2>
+		<ul>
+		  <li><b>Balanced Feature Selection:</b> Emphasize the importance of selecting relevant and non-biased features for prediction, such as economic conditions, while being cautious about using sensitive or biased features like nationality or scholarships.</li>
+		  <li><b>Transparency and Fairness:</b> Promote transparency in the model-building process and ensure that models are evaluated for fairness, mitigating any biases that may emerge.</li>
+		  <li><b>Continuous Monitoring:</b> Implement ongoing monitoring of predictive models to assess their effectiveness and fairness, making necessary adjustments over time.</li>
+		  <li><b>Privacy Protection</b> Safeguard student data and ensure compliance with data privacy regulations to protect the rights and privacy of students.</li>
+		</ul>
+		<h2>Ethical Considerations</h2>
+		<ul>
+		  <li><b>Bias in Data:</b> Biases present in historical data can lead to biased predictions. Efforts should be made to identify and mitigate such biases.</li>
+		  <li><b>Transparency:</b> Lack of transparency in model algorithms can make it difficult to understand how predictions are made, raising concerns about fairness and accountability.</li>
+		  <li><b>Privacy:</b> Collecting and storing student data for predictive analytics must be done with strict adherence to privacy regulations and guidelines.</li>
+		  <li><b>Discrimination:</b> Predictive models may inadvertently discriminate against certain groups of students, reinforcing inequalities in education.</li>
+		  <li><b>Feedback Loops:</b> Overreliance on predictions can create self-fulfilling prophecies, where students are treated differently based on predictions, affecting their actual outcomes.</li>
+		  <li><b>Stakeholder Involvement:</b> Ensure that students, educators, and parents are involved in the decision-making process regarding the use of predictive analytics in education to address concerns and foster transparency.</li>
+		  <li><b>Algorithmic Accountability:</b> Establish mechanisms for holding institutions and algorithms accountable for their predictions and decisions.</li>
+		  <li><b>Constant Monitoring:</b> Continuously monitor and audit predictive models for biases and fairness, correcting issues as they arise.</li>
+		</ul>
+	</main>
+    <footer class="footer">
+	  <p class="copyright">Presented by Rita Nguyen, Daniel Wallach, Justin Zhang, Margarita Lopez, and Uwagboe Olusoga</p>
+	</footer>
+  </body>
+</html>
